@@ -18,6 +18,7 @@
           <input type="number" class="form-control" name="price" id="priceInput"
                  step="0.01" min="0" required>
         </div>
+        
         <div class="col-md-1 d-flex align-items-end">
           <button type="submit" class="btn btn-primary w-100">Save</button>
         </div>
