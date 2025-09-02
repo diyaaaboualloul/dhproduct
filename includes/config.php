@@ -1,7 +1,7 @@
 <?php
 // Database connection settings
 $host = '127.0.0.1';
-$db   = 'product_manager';   // <-- Database name
+$db   = 'product_manager';   
 $user = 'Diyaa';
 $pass = 'Diyaa123456!@#';
 

@@ -1,10 +1,9 @@
 <?php
-// auth/login.php
 require_once __DIR__ . '/../includes/config.php';
 require_once __DIR__ . '/../includes/auth.php';
 require_once __DIR__ . '/../includes/user_model.php';
 
-requireGuest(); // block logged-in users
+requireGuest(); 
 
 $error = '';
 

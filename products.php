@@ -3,9 +3,8 @@ $page_title = 'Products';
 require_once __DIR__ . '/includes/actions.php';
 require_once __DIR__ . '/includes/config.php';
 require_once __DIR__ . '/includes/auth.php';
-requireAuth(); // block guests
+requireAuth();
 
-// Fetch all products (no flash, fail silently to empty list)
 $products = [];
 try {
   $products = $pdo->query(

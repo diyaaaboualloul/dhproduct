@@ -1,11 +1,9 @@
 <?php
-// includes/header.php
 require_once __DIR__ . '/auth.php';
 if (session_status() === PHP_SESSION_NONE) session_start();
 
 $displayName = null;
 if (isLoggedIn()) {
-    // (Optional) fetch name to show in header
     require_once __DIR__ . '/config.php';
     require_once __DIR__ . '/user_model.php';
     $u = user_find_by_id((int)$_SESSION['user_id']);
@@ -40,7 +38,6 @@ if (isLoggedIn()) {
         <a class="btn btn-sm btn-primary" href="/auth/register.php">Register</a>
       </li>
     <?php else: ?>
-      <!-- Logged-in: show user dropdown -->
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
            data-bs-toggle="dropdown" aria-expanded="false">

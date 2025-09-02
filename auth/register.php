@@ -1,11 +1,10 @@
 
 <?php
-// auth/register.php
 require_once __DIR__ . '/../includes/config.php';
 require_once __DIR__ . '/../includes/auth.php';
 require_once __DIR__ . '/../includes/user_model.php';
 
-requireGuest(); // block logged-in users
+requireGuest(); 
 
 $error = '';
 
@@ -15,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $pass     = $_POST['password'] ?? '';
     $confirm  = $_POST['password_confirm'] ?? '';
 
-    // minimal validation
+    //  validation
     if ($name === '' || $email === '' || $pass === '' || $confirm === '') {
         $error = 'All fields are required.';
     } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {

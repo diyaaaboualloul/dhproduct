@@ -1,6 +1,5 @@
 <?php
-// includes/user_model.php
-// assumes $pdo from includes/config.php
+
 
 function user_find_by_id(int $id): ?array {
     global $pdo;
